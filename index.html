@@ -6,15 +6,7 @@ title: Home
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.url }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}•
-      <!--<a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"/>-->
-    </span>
+    {% include post_header.html %}
     {{ post.content }}
   </div>
   {% endfor %}

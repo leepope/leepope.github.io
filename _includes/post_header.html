@@ -1,0 +1,16 @@
+
+{% assign num_words = post.content | strip_html | number_of_words %}
+{% assign minutes = num_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
+  <h1 class="post-title">
+    <a href="{{ site.url }}{{ post.url }}">
+      {{ post.title }}
+    </a>
+  </h1>
+
+  <p class="post-date">{{ post.date | date_to_string }} •
+  <!--<a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"/>-->
+  </p>
+  <span class="post-reading-time">{{ minutes }} minute read </span>

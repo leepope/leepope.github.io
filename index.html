@@ -12,9 +12,9 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}
-      <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"/>
-    </span>•
+    <span class="post-date">{{ post.date | date_to_string }}•
+      <!--<a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"/>-->
+    </span>
     {{ post.content }}
   </div>
   {% endfor %}

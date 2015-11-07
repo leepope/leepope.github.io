@@ -3,4 +3,5 @@ _site/
 vendor/
 .gitssh.sh
 .envrc
+public/css/
 

@@ -4,6 +4,9 @@
 permalink:           pretty
 relative_permalinks: true
 
+sass:
+  style: compressed
+
 # Setup
 title:               Time Wasted
 tagline:             '"Only those who risk going too far can possibly find out how far one can go."'

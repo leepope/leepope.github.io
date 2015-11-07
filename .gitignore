@@ -1,4 +1,6 @@
 _site/
 .sass-cache/
 vendor/
+.gitssh.sh
+.envrc
 

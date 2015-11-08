@@ -6,8 +6,20 @@ title: Home
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    {% include post_header.html %}
-    {{ post.content }}
+    <h1 class="post-title">
+      <a href="{{ site.url }}{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    {% include post_meta.html %}
+    {% if post.content contains '<!--more-->' %}
+      {{ post.content | split:'<!--more-->' | first }}
+      <p>
+        <a class="btn btn-sm btn-primary" href="{{ post.url }}/#read-more" role="button">Read more <i class="fa fa-arrow-circle-right"></i></a>
+      </p>
+    {% else %}
+      {{ post.content }}
+    {% endif %}
   </div>
   {% endfor %}
 </div>

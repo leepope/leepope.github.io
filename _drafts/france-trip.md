@@ -1,16 +1,26 @@
 ---
-layout: page
-subheadline: Cycling in France, 2015
-title:  "My French Itinerary"
-breadcrumb: true
+layout:        post
+subheadline:   Cycling in France, 2015
+title:         "My French Itinerary"
+created_at:    08-08-2015
+updated_at:    11-05-2015
 categories:
   - cycling
+tags:
+  - cycling
+  - france-2015
 header:
   image_fullwidth: "header_unsplash_5.jpg"
 show_meta: false
-author: lee
-comments: true
+author:        lee
+comments:      true
 ---
+
+I'm going to France! After dreaming about this trip since I was old enough to ride a bike, I'm
+going to spend a month on my bike in the Pyrenees and Alps. Lots of people have been asking about
+my itinerary, so I'll record it here, and update with links to the actual rides when I return home.
+
+<!--more-->
 
 ### Aug 16-20 [Paris-Brest-Paris](https://en.wikipedia.org/wiki/Paris%E2%80%93Brest%E2%80%93Paris)
 This is *The* Grand Randonnee - 1200 kilometers from Paris to the Britanny coast and back. It's older than Le

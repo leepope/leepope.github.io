@@ -4,7 +4,9 @@ layout: default
 
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
-  {{ content }}
+  {% assign post = page %}
+  {% include post_meta.html %}
+  {{ content | replace: '<!--more-->', '<a class="anchor" id="read-more"></a>' }}
   {% if page.comments == true %}
     {% include comments.html %}
   {% endif %}

@@ -1,24 +1,11 @@
 ---
 layout: default
 ---
-{% assign minutes = content | number_of_words | divided_by: 180 %}
-{% if minutes == 0 %}
-{% assign minutes = 1 %}
-{% endif %}
-
-
-<span class="reading-time" title="Estimated read time">
-  {% assign words = content | number_of_words %}
-  {% if words < 360 %}
-    1 min
-  {% else %}
-    {{ words | divided_by:180 }} mins
-  {% endif %}
-</span>
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  {% assign post = page %}
+  {% include post_meta.html %}
   {{ content }}
 </div>
 
@@ -30,7 +17,7 @@ layout: default
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
+            <small>{{ post.created_at | date: "%b %-d, %Y" }}</small>
           </a>
         </h3>
       </li>

@@ -1,4 +1,8 @@
 ---
-layout: {{ layout }}
-title: "{{ title }}"
+layout:     {{ layout }}
+title:      "{{ title }}"
+created_on: {{ date }}
+comments:   true
+author:     lee
+category:
 ---

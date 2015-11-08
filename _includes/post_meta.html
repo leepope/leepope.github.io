@@ -1,0 +1,19 @@
+{% assign num_words = post.content | strip_html | number_of_words %}
+{% assign minutes = num_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
+
+<span class="post-meta">{{ post.created_at | date: "%b %-d, %Y" }}
+  {% if post.comments %}
+  &nbsp;<i class="fa fa-circle fa-small" ></i>&nbsp;
+    <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"/></a>
+  {% endif %}
+</span>
+<br/>
+{% if post.updated_at %}
+  <span class="post-meta">Updated: {{ post.updated_at | date: "%b %-d, %Y" }}</span>
+  <br/>
+{% endif %}
+<span class="post-meta small">{{ minutes }} minute read</span>
+<br/><br/> 

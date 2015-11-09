@@ -1,11 +1,9 @@
 ---
 layout:        post
-subheadline:   Cycling in France, 2015
-title:         "My French Itinerary"
+title:         "Itinerary For My French Cycling Trip"
 created_at:    08-08-2015
 updated_at:    11-05-2015
-categories:
-  - cycling
+category:      cycling
 tags:
   - cycling
   - france-2015

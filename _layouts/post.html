@@ -7,6 +7,7 @@ layout: default
   {% assign post = page %}
   {% include post_meta.html %}
   {{ content }}
+  {% include post_footer.html %}
 </div>
 
 <div class="related">
@@ -17,8 +18,8 @@ layout: default
         <h3>
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
-            <small>{{ post.created_at | date: "%b %-d, %Y" }}</small>
           </a>
+          <small>{{ post.created_at | date: "%b %-d, %Y" }}</small>
         </h3>
       </li>
     {% endfor %}

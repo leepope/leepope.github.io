@@ -1,3 +1,9 @@
+{% capture categories %}
+  {% for category in site.categories %}
+    {{ category | first }}
+  {% endfor %}
+{% endcapture %}
+{% assign sorted_categories = categories | split:' ' | sort %}
 <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
@@ -24,9 +30,12 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-
   </nav>
 
-  <div class="sidebar-item">
-  </div>
+    <a class="sidebar-nav-item {% if page.url contains '/categories'%}active{% endif %}" href="/categories/">Categories</a>
+      {% for category in sorted_categories %}
+      <a class="sidebar-nav-item  {% if page.url contains '/categories/{{ category }}'%}active{% endif %}" href="/categories#{{ category }}">&nbsp;&nbsp;&ndash;&nbsp;{{ category | capitalize }}</a>
+      {% endfor %}
+    <a class="sidebar-nav-item {% if page.url contains '/tags'%}active{% endif %}" href="/tags/">Tags</a>
+    {% include tag_cloud.html %}
 </div>

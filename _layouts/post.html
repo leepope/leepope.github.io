@@ -19,7 +19,7 @@ layout: default
           <a href="{{ site.baseurl }}{{ post.url }}">
             {{ post.title }}
           </a>
-          <small>{{ post.created_at | date: "%b %-d, %Y" }}</small>
+          <small>{{ post.date | date: "%b %-d, %Y" }}</small>
         </h3>
       </li>
     {% endfor %}

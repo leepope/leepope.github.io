@@ -4,7 +4,7 @@
 {% assign minutes = 1 %}
 {% endif %}
 
-<span class="post-meta">{{ post.created_at | date: "%b %-d, %Y" }}
+<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
   {% if post.comments %}
   &nbsp;<i class="fa fa-circle fa-small" ></i>&nbsp;
     <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{ post.url }}"/></a>
@@ -16,4 +16,4 @@
   <br/>
 {% endif %}
 <span class="post-meta small">{{ minutes }} minute read</span>
-<br/><br/> 
+<br/><br/>

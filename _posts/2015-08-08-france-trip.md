@@ -1,8 +1,8 @@
 ---
 layout:        post
 title:         "Itinerary For My French Cycling Trip"
-created_at:    08-08-2015
-updated_at:    11-05-2015
+date:          2015-08-08T10:52:51-08:00
+updated:       2015-11-05
 category:      cycling
 tags:
   - cycling
@@ -13,6 +13,13 @@ show_meta: false
 author:        lee
 comments:      true
 ---
+
+#### _Updated {{ page.updated | date: "%b %-d, %Y" }}_ 
+
+I've moved this site to [Github Pages](http://pages.github.com), and will be
+adding posts about my trip over the next few weeks. 
+
+#### _Original Post_
 
 I'm going to France! After dreaming about this trip since I was old enough to ride a bike, I'm
 going to spend a month on my bike in the Pyrenees and Alps. Lots of people have been asking about

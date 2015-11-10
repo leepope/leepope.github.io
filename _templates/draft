@@ -1,7 +1,7 @@
 ---
 layout:     {{ layout }}
 title:      "{{ title }}"
-date: {{ date }}
+date:       {{ date }}
 comments:   true
 author:     lee
 category:

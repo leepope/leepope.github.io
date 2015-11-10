@@ -1,8 +1,10 @@
 ---
 layout: {{ layout }}
 title: "{{ title }}"
-created_at: {{ date }}
-category:
+date: {{ date }}
 author: lee
 comments: true
+category:
+tags:
+  -
 ---

@@ -2,8 +2,8 @@
 layout: post
 title: "New Post"
 comments: false
-created_at:  06-11-2015
-updated_at: 08-11-2015
+date:  06-11-2015
+updated: 08-11-2015
 author: lee
 category: testing
 tags:

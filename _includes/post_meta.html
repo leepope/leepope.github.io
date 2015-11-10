@@ -11,8 +11,8 @@
   {% endif %}
 </span>
 <br/>
-{% if post.updated_at %}
-  <span class="post-meta">Updated: {{ post.updated_at | date: "%b %-d, %Y" }}</span>
+{% if post.updated %}
+  <span class="post-meta">Updated: {{ post.updated | date: "%b %-d, %Y" }}</span>
   <br/>
 {% endif %}
 <span class="post-meta small">{{ minutes }} minute read</span>

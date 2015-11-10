@@ -1,9 +1,10 @@
 ---
-layout: {{ layout }}
-title: "{{ title }}"
-date: {{ date }}
-author: lee
-comments: true
+layout:       {{ layout }}
+title:       "{{ title }}"
+date:         {{ date }}
+author:       lee
+published:    true
+comments:     true
 category:
 tags:
   -

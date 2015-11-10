@@ -1,9 +1,10 @@
 ---
 layout:     post
-title:      "Arriving-in-france"
+title:      "Arriving in France"
 created_on: 2015-11-09T11:13:28-08:00
-comments:   true
+comments:   
 author:     lee
+draft:      true
 category:   cycling
 tags:
   - cycling

@@ -2,6 +2,7 @@ $light-grey:       #9a9a9a;
 $super-light-grey: #EEE;
 $light-blue:       #268BD2;
 $white:            #FFF;
+$reddish:          #D22F2F;
 
 .post-meta {
   font-style:  italic;
@@ -43,6 +44,12 @@ i.fa-small {
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: 0;
+}
+
+.wip {
+   font-style: italic;
+   color:      $reddish;
+   text-decoration: underline; 
 }
 
 .site-tag {

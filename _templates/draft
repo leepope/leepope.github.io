@@ -2,6 +2,7 @@
 layout:     {{ layout }}
 title:      "{{ title }}"
 date:       {{ date }}
+draft:      true
 comments:   true
 author:     lee
 category:

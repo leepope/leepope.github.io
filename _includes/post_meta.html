@@ -17,3 +17,7 @@
 {% endif %}
 <span class="post-meta small">{{ minutes }} minute read</span>
 <br/><br/>
+
+{% if post.draft %}
+  <p class="wip">Draft -- Work in Progress</p>
+{% endif %}

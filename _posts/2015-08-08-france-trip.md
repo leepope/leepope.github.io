@@ -3,6 +3,7 @@ layout:        post
 title:         "Itinerary For My French Cycling Trip"
 date:          2015-08-08T10:52:51-08:00
 updated:    2015-11-05
+comments:      true
 category:      cycling
 tags:
   - cycling
@@ -11,7 +12,6 @@ header:
   image_fullwidth: "header_unsplash_5.jpg"
 show_meta: false
 author:        lee
-comments:      true
 ---
 
 #### [Updates:](#updates) (Latest update {{ page.updated | date: "%b %-d, %Y" }})_
@@ -98,9 +98,9 @@ and the Col de Glandon
 
 I may just decide to to [La Marmotte](http://www.cycling-challenge.com/2010-la-marmotte-success/), depending on the time available.
 
-###_ Updates
+### Updates
 
-d ]({{ page.url }}#updates)
+_Nov 5, 2015_
 
 I've moved this site to [Github Pages](http://pages.github.com), and will be
 adding posts about my trip over the next few weeks. 
